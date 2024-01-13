@@ -587,3 +587,138 @@ body {
 .row:hover .layer {
   height: 70%;
 }
+
+/* contact page */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  padding-left: 30px;
+  margin-top: 130px;
+}
+.contact-text h2 {
+  font-size: 90px;
+  line-height: 1;
+  text-align: center;
+}
+.contact-text h2 span {
+  color: #eab3ce;
+}
+.contact-text h4 {
+  margin: 15px 0;
+  color: rgb(228, 228, 228);
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-text p {
+  color: rgb(177, 177, 177);
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+.contact-list {
+  margin-bottom: 3rem;
+}
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-list i {
+  display: inline-block;
+  color: #eab3ce;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.contact-list li:hover {
+  transform: scale(1.01) translateY(-5px);
+  color: #eab3ce;
+}
+.contact-icons i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #eab3ce;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #eab3ce;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  transition: 0.5s ease;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+.contact-icons i:hover {
+  background: #eab3ce;
+  color: #000;
+  box-shadow: 0 0 20px #eab3ce;
+}
+.contact-form form {
+  position: relative;
+}
+.contact-form form input,
+form textarea {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 18px;
+  background: #eaeaea;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.contact-form textarea {
+  resize: none;
+  height: 220px;
+}
+.contact-form form .send {
+  display: inline-block;
+  padding: 14px 60px;
+  background: #eab3ce;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #0b0b37;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #eab3ce, 0 0 25px #eab3ce;
+}
+.contact-form form .send:hover {
+  box-shadow: 0 0 5px #eab3ce, 0 0 5px #eab3ce, 0 0 5px #eab3ce, 0 0 5px #eab3ce,
+    0 0 5px #eab3ce;
+}
+
+.last-text p {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #011e9c;
+  font-weight: 300;
+  margin-top: 70px;
+}
+.top {
+  position: fixed;
+  bottom: 2.1rem;
+  right: 2.1rem;
+}
+.top i {
+  color: #000;
+  background: #eab3ce;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
